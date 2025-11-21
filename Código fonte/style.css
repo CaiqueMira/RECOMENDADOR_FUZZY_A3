@@ -306,12 +306,11 @@ footer .profile-image-container:hover {
 footer .profile-image-container .tooltip-name {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black;
   cursor: pointer;
 }
 
 footer .profile-image-container .tooltip-name .tooltip-text {
-  opacity: 0;
+  visibility: hidden;
   width: 130px;
   background-color: #181818;
   color: #fff;
@@ -320,13 +319,27 @@ footer .profile-image-container .tooltip-name .tooltip-text {
   padding: 5px 0;
   position: absolute;
   z-index: 100;
-  top: -90%;
-  left: -80%;
-  transition: opacity .5s;
+  top: -101%;
+  left: -92%;
+}
+
+footer .profile-image-container .tooltip-name.large .tooltip-text {
+  top: -132%;
+}
+
+footer .profile-image-container .tooltip-name .tooltip-text::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #181818 transparent transparent transparent;
 }
 
 footer .profile-image-container:hover .tooltip-text {
-  opacity: 1;
+  visibility: visible;
 }
 
 /* ---------- RESPONSIVIDADE ---------- */
