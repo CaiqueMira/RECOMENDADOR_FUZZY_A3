@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Recomendador Fuzzy de Filmes 🎬</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎬 Recomendador de Filmes Fuzzy</h1>
+    <p>Descubra o filme perfeito para seu humor!</p>
+  </header>
+
+  <div class="main-container">
+    <main>
+      <section class="controls">
+
+        <div class="control-container">
+          <div class="control slider-control">
+            <label>🎭 Nível de emoção:</label>
+            <div class="slider-wrapper">
+                <input type="range" id="emocao" min="0" max="100" value="50">
+                <div class="tooltip" id="tooltipEmocao">50 – Moderado</div>
+            </div>
+          </div>
+
+          <div class="control slider-control">
+              <label>⚡ Nível de tensão:</label>
+              <div class="slider-wrapper">
+                  <input type="range" id="tensao" min="0" max="100" value="50">
+                  <div class="tooltip" id="tooltipTensao">50 – Média</div>
+              </div>
+          </div>
+
+          <div class="control slider-control">
+              <label>📖 Complexidade da narrativa:</label>
+              <div class="slider-wrapper">
+                  <input type="range" id="narrativa" min="0" max="100" value="50">
+                  <div class="tooltip" id="tooltipNarrativa">50 – Moderada</div>
+              </div>
+          </div>
+        </div>
+
+        <div class="control-container">
+          <div class="control">
+              <label>⏱️ Preferência de duração:</label>
+              <select id="duracao">
+                <option value="Longo">Longo</option>
+                <option value="Medio">Médio</option>
+                <option value="Curto">Curto</option>
+              </select>
+          </div>
+
+          <div class="control">
+              <label>🎞️ Época do filme:</label>
+              <select id="epoca">
+                <option value="Atual">Atual</option>
+                <option value="Moderno">Moderno</option>
+              <option value="Antigo">Antigo</option>
+              </select>
+          </div>  
+
+        </div>
+
+        <button id="searchBtn">Buscar Filmes</button>
+      </section>
+
+      <section id="ranking">
+        <h2>🏆 Ranking de Recomendações</h2>
+        <p id="generos"></p>
+        <div id="moviesGrid" class="grid"></div>
+      </section>
+    
+    </main>
+    
+    <footer>
+      <p>Desenvovido por</p>
+      <div class="profile-container">
+        <div class="profile-image-container">
+          <div class="tooltip-name">
+            <img src="images/iago.png" alt="imagem de iago">
+            <span class="tooltip-text">
+              Iago
+              <br>
+              1235648965
+            </span>
+          </div>
+        </div>
+        <div class="profile-image-container">
+          <img src="images/jotinha.png" alt="imagem de jotinha">
+        </div>
+        <div class="profile-image-container">
+          <img src="images/julia.png" alt="imagem de júlia">
+        </div>
+        <div class="profile-image-container">
+          <img src="images/marcos.png" alt="imagem de marcos">
+        </div>
+        <div class="profile-image-container">
+          <img src="images/maria.png" alt="imagem de maria">
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
