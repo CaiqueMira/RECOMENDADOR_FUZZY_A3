@@ -288,6 +288,7 @@ footer .profile-image-container {
   border: 2px solid #121212;
   margin-left: -10px;
   transition: transform .5s, box-shadow .3s;
+  cursor: pointer;
 }
 
 footer .profile-image-container img {
@@ -302,14 +303,7 @@ footer .profile-image-container:hover {
   z-index: 20;
 }
 
-
-footer .profile-image-container .tooltip-name {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
-
-footer .profile-image-container .tooltip-name .tooltip-text {
+footer .profile-image-container .tooltip-text {
   visibility: hidden;
   width: 130px;
   background-color: #181818;
@@ -319,15 +313,15 @@ footer .profile-image-container .tooltip-name .tooltip-text {
   padding: 5px 0;
   position: absolute;
   z-index: 100;
-  top: -101%;
+  top: -107%;
   left: -92%;
 }
 
-footer .profile-image-container .tooltip-name.large .tooltip-text {
-  top: -132%;
+footer .profile-image-container .tooltip-text.large {
+  top: -141%;
 }
 
-footer .profile-image-container .tooltip-name .tooltip-text::after {
+footer .profile-image-container .tooltip-text::after {
   content: " ";
   position: absolute;
   top: 100%; /* At the bottom of the tooltip */
