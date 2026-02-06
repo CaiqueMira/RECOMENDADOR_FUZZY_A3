@@ -5,7 +5,12 @@
 
 [![Página principal](Código%20fonte/images/pagina.png)](https://caiquemira.github.io/RECOMENDADOR_FUZZY_A3/C%C3%B3digo%20fonte/)
 
-[<p align="center">🔗Acesso para página publicada</p>](https://caiquemira.github.io/RECOMENDADOR_FUZZY_A3/C%C3%B3digo%20fonte/)
+<p align="center">
+  <a href="https://caiquemira.github.io/RECOMENDADOR_FUZZY_A3/C%C3%B3digo%20fonte/">
+    🔗 Acesso para página publicada
+  </a>
+</p>
+
 
 ## 🧭 Visão geral
 
