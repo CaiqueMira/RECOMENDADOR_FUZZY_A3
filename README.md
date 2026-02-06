@@ -2,6 +2,11 @@
 
 > Projeto que usa lógica fuzzy para recomendar gêneros de filmes conforme o estado emocional do usuário (emoção, tensão e complexidade narrativa). A aplicação consulta a API do **TMDB** para buscar filmes compatíveis com o resultado fuzzy.
 
+
+[![Página principal](Código%20fonte/images/pagina.png)](https://caiquemira.github.io/RECOMENDADOR_FUZZY_A3/C%C3%B3digo%20fonte/)
+
+[<p align="center">🔗Acesso para página publicada</p>](https://caiquemira.github.io/RECOMENDADOR_FUZZY_A3/C%C3%B3digo%20fonte/)
+
 ## 🧭 Visão geral
 
 Este projeto usa **lógica fuzzy** para recomendar filmes com base em três entradas:
